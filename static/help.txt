@@ -1,0 +1,21 @@
+
+-----------------------------------------------------------------
+
+Run the app with the below given arguments for specific results
+
+-----------------------------------------------------------------
+
+No argument:
+
+Displays all the airports with their IATA codes.
+
+Arguments:
+
+--help - Displays help message (this message)
+--cities - Displays cities with airports
+--coords - Displays coordinates of each airport
+--iata - Displays IATA codes of airports
+--names - Displays names of airports
+--full - Displays every detail of every airport
+
+-----------------------------------------------------------------
