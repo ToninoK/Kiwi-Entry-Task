@@ -19,7 +19,7 @@ class Option:
         """Function which returns a list of data for the airports
 
         Returns:
-            airport_cities_data -- contains airport data; name, city
+            list -- contains airport data; name, city
         """
         airport_cities_data = []
         for airport in self.data:
@@ -30,7 +30,7 @@ class Option:
         """Function which returns a list of data for the airports
 
         Returns:
-            lst -- contains airport data; longitude, lattitude
+            list -- contains airport data; longitude, lattitude
         """
     
         lst = []
@@ -47,7 +47,7 @@ class Option:
         """Function which returns a list of data for the airports
 
         Returns:
-            airport_iata_data -- contains airport data; iata code
+            list -- contains airport data; iata code
         """
         airport_iata_data = []
         for airport in self.data:
@@ -58,7 +58,7 @@ class Option:
         """Function which returns a list of data for the airports
 
         Returns:
-            airport_name_data -- contains airport data; name
+            list -- contains airport data; name
         """
 
         airport_name_data = []
@@ -88,7 +88,7 @@ class Option:
         """Function which returns a list of data for the airports
 
         Returns:
-            airport_optfree_data -- contains airport data; iata code, name
+            list -- contains airport data; iata code, name
         """
 
         lst = []
