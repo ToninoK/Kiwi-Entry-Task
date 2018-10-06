@@ -8,18 +8,10 @@ req = requests.get('https://api.skypicker.com/locations?type=subentity&term=GB&l
 opter = Option(req.json())
 
 if '--help' in argv:
-    print('\n----------------------------------------------------------------\n'
-    +'\nRun the app with the below given commands for specific results\n'
-    +'\n----------------------------------------------------------------\n'
-    +'\n--help - shows help for commands'
-    +'\n--cities - shows cities with airports'
-    +'\n--coords - shows coordinates of each airport'
-    +'\n--iata - shows IATA codes of airports'
-    +'\n--names - shows names of airports'
-    +'\n--full - shows every detail of every airport\n'
-    +'\n----------------------------------------------------------------\n'
-    )
-
+    f = open('./static/help.txt', 'r')
+    msg = f.read()
+    print(msg)
+    f.close()
 
 if '--cities' in argv:
     print('\n'+tabulate(opter.structure_cities(), headers=['Name', 'City'], tablefmt='orgtbl')+'\n')
